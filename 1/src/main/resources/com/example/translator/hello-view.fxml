@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.translator.Controller">
+   <children>
+      <Button fx:id="SaveDictionaryButton" layoutX="306.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Сохранить словарь" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="114.0" layoutX="18.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+      <TextField fx:id="RussianField" layoutX="42.0" layoutY="97.0" prefHeight="25.0" prefWidth="204.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="114.0" layoutX="282.0" layoutY="53.0" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+      <TextField fx:id="EnglishField" layoutX="306.0" layoutY="98.0" prefHeight="25.0" prefWidth="204.0" />
+      <Button fx:id="TranslateButton" layoutX="18.0" layoutY="185.0" mnemonicParsing="false" text="Перевести" />
+      <Button fx:id="DictionaryButton" layoutX="18.0" layoutY="222.0" mnemonicParsing="false" text="Посмотреть словарь" />
+      <Button fx:id="MoreButton" layoutX="18.0" layoutY="279.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="62.0" text="Справка" />
+      <Label layoutX="18.0" layoutY="31.0" prefHeight="17.0" prefWidth="118.0" text="Русский ввод/вывод" />
+      <Label layoutX="282.0" layoutY="32.0" prefHeight="17.0" prefWidth="143.0" text="Английский ввод/вывод" />
+      <Button fx:id="LoadDictionaryButton" layoutX="163.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Загрузить словарь" />
+      <Button fx:id="AddButton" layoutX="106.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Добавить" />
+      <Button fx:id="DeleteButton" layoutX="194.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Удалить" />
+      <TextField fx:id="searchBar" layoutX="551.0" layoutY="52.0" prefHeight="25.0" prefWidth="223.0" />
+      <ListView fx:id="listView" layoutX="550.0" layoutY="87.0" prefHeight="147.0" prefWidth="299.0" />
+      <Button layoutX="781.0" layoutY="52.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="68.0" text="Поиск" />
+      <TextField fx:id="Counter" layoutX="282.0" layoutY="185.0" prefHeight="25.0" prefWidth="40.0" />
+   </children>
+</AnchorPane>
